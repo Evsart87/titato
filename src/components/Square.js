@@ -1,14 +1,6 @@
-import { useState } from "react";
-
 function Square(params) {
-  const [value, setValue] = useState("");
-
-  function handleClick() {
-    setValue("X");
-  }
-
   return (
-    <div className="square" onClick={handleClick}>{value}</div>
+    <div className="square" onClick={params.click}>{params.value}</div>
   )
 }
 
